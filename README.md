@@ -1,6 +1,7 @@
 # cryptic.zsh-theme
 
 I used [aphrodite-terminal-theme](https://github.com/win0err/aphrodite-terminal-theme) as a starting point for this theme.
+
 The one charachter gap on the right side is to make resized windows look cleaner. However it still may not update properly with some desktope environments.
 
 ```bash
