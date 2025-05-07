@@ -1,3 +1,4 @@
+[![wakatime](https://wakatime.com/badge/github/thederpykrafter/cryptic.zsh-theme.svg)](https://wakatime.com/badge/github/thederpykrafter/cryptic.zsh-theme)
 # cryptic.zsh-theme
 
 I used [aphrodite-terminal-theme](https://github.com/win0err/aphrodite-terminal-theme) as a starting point for this theme.
