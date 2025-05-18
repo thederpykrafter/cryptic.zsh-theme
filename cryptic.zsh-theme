@@ -45,7 +45,7 @@ function cryptic_get_prompt() {
 	echo -n "┌%f"
 
 	# user name
-	echo -n "%F{6}%n%f" #color=cyan
+	echo -n "%F{69}%n%f" #color=blue
 
 	# dash between user & host
 	echo -n "%(?.%f.%F{1})"  # if retcode == 0 ? reset : red
@@ -56,7 +56,7 @@ function cryptic_get_prompt() {
 	echo -n ${(l:COLUMNS - cryptic_divider_length::─:)}
 
 	# host
-	echo -n "%F{12}%m%f" # host color=blue
+	echo -n "%F{99}%m%f" # host color=purple
 
 	# corner after host
 	echo -n "%(?.%f.%F{1})" # if retcode == 0 ? reset : red
