@@ -35,9 +35,15 @@ function cryptic_get_prompt() {
 		echo -n "%F{7}["$(basename "$VIRTUAL_ENV")"]%f "
 	fi
 
+	if command -v hostname &> /dev/null ; then
+		hostname_cmd=$(hostname)
+	elif command -v hostnamectl &> /dev/null ; then
+		hostname_cmd=$(hostnamectl hostname)
+	fi
+
 	# get length of username + hostname + 2 corners + 1 dash + 1 to prevent resizing issues
 	cryptic_user_length=$(echo -n $(whoami) | wc -c)
-	cryptic_hostname_length=$(echo -n $(hostname) | wc -c)
+	cryptic_hostname_length=$(echo -n `echo $hostname_cmd` | wc -c)
 	cryptic_divider_length=cryptic_user_length+cryptic_hostname_length+4
 
 	# corner before user
